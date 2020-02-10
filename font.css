@@ -1,0 +1,45 @@
+/* 
+Sử dụng goolge font:
+    ex: <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> trong thẻ head của html
+sử dụng font adobe
+https://fonts.adobe.com/
+*/
+/* style font 
+    1. font-family: sử dụng kiểu font chữ
+    2. font-size: kích cỡ của font
+        xx-small
+        x-small
+        small
+        medium
+        large
+        x-: 
+        xx-large
+        smaller: nhỏ hơn so với parent 
+        larger: lớn hơn so với parent
+        px or lem or em
+    3. font-style: 
+        nomarl <default>
+        italic: chữ nghiêng
+        oblique: chữ xiên
+    4. font-weight
+        nomarl <default>
+        bold: chữ đậm
+        bolder: chữ đậm hơn
+        lighter: chữ nhạt
+        100 -> 900: 400: nomarl, 700: bold
+    5. font variant
+        nomarl 
+        small-caps
+    font-shorthand:
+         font: font-style font-variant font-weight font-size/line-height font-family;
+    need atleast font-size and font-family
+*/
+
+
+.font-style {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 700;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+}

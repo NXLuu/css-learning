@@ -1,0 +1,59 @@
+/* boder style
+    shorthand: border: border-width border-style border-color;
+    border-width:
+        medium
+        thin
+        thick
+        px-top-right-bottom-left
+    border-style:
+        none: <default>
+        hidden: giông none tránh xung đột border
+        dotted: .....
+        dashed: -----
+        solid: đường thẳng
+        double: 2 đường thẳng
+        groove: 
+        ridge:
+        inset:
+        outset:
+        shorthand: border-style-t-r-b-l
+    border-color:
+    border-radius: px % t-r-b-l
+    border-right-color-style-width
+    left-top-bottom
+*/
+
+/* 
+    padding style:
+        padding:
+        padding-top:
+        padding-bottom:
+        pading-right:
+        padding-left:
+*/
+
+/* 
+    margin-style:
+        margin:
+        margin-top
+        margin-bottom
+        margin-right
+        margin-left
+*/
+
+.border {
+    border: 2px solid gray;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.padding {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+.margin {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}

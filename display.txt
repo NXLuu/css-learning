@@ -1,0 +1,7 @@
+1. inline: 
+    -Độ rộng bằng độ rộng của content nằm chung 1 hàng với các inline Element khác 
+    -Không chỉnh được kích thước, chỉ chỉnh được padding trái hoặc phải không chỉnh được trên dưới
+2. block: Có chiều rộng bằng chiều rộng của mẹ nó
+    - Chỉnh được padding hay margin bốn hướng
+3. inline-block:
+    Giống inline nhưng cũng chỉnh được 4 hướng đông tây nam bắc

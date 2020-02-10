@@ -1,0 +1,71 @@
+/* style text 
+    all properties:
+    1. color
+    2. text-align
+        start: default;
+        end: phía bên phải của block
+        center: giữa của block
+        justify: mở rộng khoảng cách mỗi chữ để đầu dòng và cuối dong bằng nhau
+        initial: default sets;
+        inherit: kế thừa thuộc tính của parent
+    3.Text-decoration
+        text-decoration-line:
+            none
+            underline: gạch dưới
+            overline: gạch trên
+            line-through: gạch ngang
+        text-decoration-color:
+            color
+        text-decoration-style:
+            solid: 1 gạch
+            double: 2 gạch
+            dotted: ........
+            dashed: gạch bị đứt đoạn
+            wavy: lượn sóng
+    4.Text-transform:
+        capital: viết hoa chữ cái đầu mỗi từ
+        lơwercase: viết thường hết
+        uppercase: viết hoa hết
+    5.Text-inden: lùi đầu dòng
+        % or px
+    6.Text-shadow:
+        h-shadow: ngả bóng theo trục ngang
+        v-shadow: ngả bóng theo trục dọc
+        blur: độ mờ
+        color: màu sắc
+    7.direction: định hướng văn bản 
+        ltr: <default>
+        rlt: phải sang trái
+    8. text-overflow: chữ tràn quá parent
+        overflow: hiden
+        text-overflow:
+            clip: cắt bỏ chữ bị tràn
+            ellipsis: thay chữ bị tràn bằng ...
+            string
+    9.letter-spacing: khoảng cách giữa các chữ trong 1 từ
+        normal: <default>
+        length: px or cm or em or rem
+    10.Word-spacing: tăng giảm khoang cách giữa các từ
+        nomarl: 0.25 em
+        length
+    11.Line-height: khoảng cách giữa các dòng
+        normal: <default>
+        number: 1 số nhân với kích thước font để đặt chiều cao dòng
+        length
+        %: phần trăm của font chữ
+    12. vertical-align: căn chỉnh chiều dọc
+    13. unnicode-bidi
+*/
+
+#demo {
+    color:red;
+    text-align: justify;
+    text-decoration: underline overline solid rgb(7, 7, 7);
+    text-transform: capitalize;
+    text-indent: 0px;
+    text-shadow: 2px 2px 3px gray;
+    direction: ltr;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+}

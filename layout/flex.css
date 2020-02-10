@@ -1,0 +1,85 @@
+/* 
+    flex layout:
+        in container: 
+            display: flex; // các cột css không ảnh hưởng đến flex
+            flex-direction: // xác định hướng của các flex item
+                row: theo hàng ngang
+                row-reverse: thứ tụ của item từ phải qua trái 
+                column: theo cột
+                column-reverse: Ngược
+            flex-wrap: // Xuống dòng nếu width không đủ cho các item
+                nowrap: fit hết vào 1 dòng
+                wrap: Nếu không đủ chỗ sẽ xuống 1 dòng khác
+            flex-flow: // shorhand: flex-direction || flex-wrap
+            justify-content: // chỉnh không gian và các item
+                flex-start: từ trái qua phâi
+                flex-end: từ phải qua trái
+                center: item dồn vào giữa, khoảng không giữa 2 lề
+                space-between: 2 item dồn sát lề, khoảng cách giữa các item
+                space-around: 
+                space-evenly:
+            align-item: // Chỉnh trục ngang của các item
+                flex-start: // Đầu của mỗi item sẽ bắt đầu từ đỉnh của container
+                flex-end: // đít của mỗi item sẽ bắt đầu từ đít của mỗi container
+                center: // căn giữa các item
+                stretch: // Dàn đều chiều cao của các item
+            align-content: // sắp xếp khoảng cách giữa các hàng
+                flex-start:
+                flex-end:
+                center
+                stretch
+                space-between
+                space-around
+
+        ---------------------
+        for child:
+            order: number có cả số âm xác định thứ tự của từng item
+            flex-grow: chia tỷ lệ phát triển của item
+                number là số nguyên dương
+            flex-shrink: định nghĩa khả năng thu nhỏ
+                number là số nguyên dương
+            flex-basis: chiều dài ban đầu của item
+            flex: flex-grow | flex-shrink | flex-basis
+            align-self: căn chỉnh theo chiều dọc của chính item
+                flex-start
+                flex-end
+                center 
+                baseline
+                stretch
+*/
+
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 150px;
+    border: 1px solid black;
+
+}
+
+.item-flex {
+    border: 1px solid rgb(232, 13, 13);
+    width: 130px;
+}
+
+.item-1 {
+    order: 1;
+    flex-grow: 2;
+    flex-basis: ;
+}
+
+.item-2 {
+    order: 1;
+}
+.item-3 {
+    order: 1;
+}
+.item-4 {
+    order: 1;
+}
+.item-5 {
+    order: 1;
+}

@@ -1,0 +1,49 @@
+/* 
+    style table
+        border:
+        border-collapse: khi trùng border có xoá bỏ hay không
+            collapse:
+            separate
+        border-spacing: Xác định khoảng cách của các border trong bảng
+        caption-side: chỉ định vị trí của tiêu đề bảng
+            top
+            bottom
+        empty-shell: hiển thị hoặc không hiển thị viền của 1 ô trống
+            hide 
+            show
+        table-layout: thuật toán bố trí độ rộng của các hàng hoặc cột
+            fixed: nhanh hơn khi render
+            auto
+*/
+.overflow-table {
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid rgb(220, 220, 220);
+}
+
+th {
+    height: 30px;
+    color: white;
+    text-align: left;
+    text-transform: capitalize;
+    background-color: rgb(9, 177, 9);
+}
+
+th, td {
+    padding: 15px;
+}
+tr:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(234, 234, 234);
+}

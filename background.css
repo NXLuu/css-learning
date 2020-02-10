@@ -1,0 +1,62 @@
+/*
+background style:
+    background-image: 
+        url(anh1.png), url(anh2.png);
+        linear-gradient();
+        radial-gradient();
+        repeating-linear-gradient();
+        repeating-radial-gradient();
+    background-position:
+        1 Value: chỉnh theo chiều ngang
+        2 value: chỉnh theo cả chiều ngang và chiều dọc
+        length //////
+        percentage  ////////
+        left top
+        left center 
+        left bottom
+        right top
+        right center
+        right bottom
+        center top
+        center center 
+        center bottom
+    background-size: // chỉnh kích cỡ của background
+        auto: <default>
+        length:
+        percent:
+        cover: luôn luôn phủ kín website
+        contain: luôn luôn hiển thị cả bức ảnh 
+        1 value: width = value, hieght: auto
+        2 value: first = ưidht, second = height
+    background-repeat: lặp lại ảnh background
+        repeat: Lặp lại ảnh nền ra cẩ div
+        repeat-x: lặp lại theo trục ngang
+        repeat-y: lặp lại theo trục đứng
+        no-repeat: không lặp lại
+        space: lặp lại ở giữ có khoảng trống
+        round: kéo ảnh lặp lại đẻ cho vừa
+    background-attachment: khi cuộn trang hình nền có thay đổi không
+        scroll
+        fixed
+        local
+    background-origin: xác đình vị trí gốc để đặt ảnh nền
+        padding-box
+        border-box
+        content-box
+    background-clip: xác định ảnh nền mở rộng được bao xa
+        border-box
+        padding-box
+        content-box
+    background-color: 
+*/
+
+.background {
+    background: linear-gradient(127deg, rgba(49,15,108,0.9444152661064426) 14%, rgba(133,133,238,1) 63%, rgba(80,226,255,1) 100%);
+    background-size: 600px 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box;
+    background-attachment: scroll;
+    background-color: black;
+}

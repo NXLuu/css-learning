@@ -1,0 +1,68 @@
+.weekly-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(237, 237, 237);
+}
+
+.weekly-container .number {
+    font-size: 19px;
+    padding: 0px 9px;
+}
+
+.weekly-container .infor {
+    font-size: 13px;
+    flex-grow: 1;
+}
+
+.weekly-container .singer {
+    color: rgb(150, 142, 142);
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.weekly-container .view-count {
+    color: rgb(150, 142, 142);
+    font-size: 12px;
+}
+
+/* --------------- */
+.subject-tag {
+    width: 190px;
+    height: 190px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgb(165, 156, 156);
+    background-image: url("https://picsum.photos/200/200");
+    background-size: 195px 195px;
+    transition: all 0.5s;
+}
+
+.subject-tag .overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.324);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.subject-tag .icon {
+    color: white;
+    transition: all 0.3s;
+    transform: scale(0.4);
+}
+
+.size:hover .subject-tag {
+    background-size: 200px 200px;
+}
+
+.subject-tag:hover .overlay {
+    opacity: 1;
+}
+
+.subject-tag:hover .icon {
+    transform: scale(1);
+}

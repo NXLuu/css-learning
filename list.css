@@ -1,0 +1,25 @@
+/* 
+    list style 
+        list-style-type: 
+            none
+            disc: chấm đen
+            circle: hình tròn 
+            square: hình vuông 
+            và rất nhiều chữ
+        list-style-image:
+            none 
+            url();
+        list-style-position:
+            inside: Đánh dấu sẽ nằm trong list
+            outside: Đánh dấu sẽ nằm ngoài list item
+    shorthand: 
+        list-style: type | image | position
+*/
+
+.list-style {
+    /* list-style-type: none;
+    list-style-image: url(download.png);
+    list-style-position: inside; */
+    list-style: none url(download.png) inside;
+}
+

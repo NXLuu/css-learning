@@ -1,0 +1,34 @@
+/* 
+    position: sử dụng đẻ điều chỉnh vị trí tương đối
+        static: <nomarl> vị trí của đối tượng sẽ gắn với trang web chung
+
+        relative: Vị trị của phần tử nằm trong vị trị tương đối với trang web, Nhưng có thể sử dụng được các giá trị top right bottom left
+
+        absolute: phần tử được đặt vị trí tương đối so với thẻ relative hoăc fixed gần nhất
+
+        fixed: ra khỏi bố mẹ không thay đổi khi cuộn trang web
+
+        sticky: 
+
+*/
+
+.grand {
+    width: 400px;
+    height: 400px;
+    background: rgb(181, 181, 181);
+}
+
+.parent {
+    width: 200px;
+    height: 200px;
+    background: rgb(133, 133, 133);
+    position: relative;
+    top: 200px;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    position: absolute
+}

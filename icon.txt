@@ -1,0 +1,31 @@
+Sử dụng font-awesome 
+Thêm tag vào thẻ link head để sử dụng font pro
+<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
+
+style fast icon
+chỉnh kích cỡ :
+fa-xs
+fa-sm
+fa-lg
+fa-2x
+.....
+.....
+fa-10x
+
+2. gióng thẳng hàng bằng cách fixed width thêm fa-fw
+<div style="font-size: 2rem;">
+  <div><i class="fas fa-skating fa-fw" style="background:DodgerBlue"></i> Skating</div>
+  <div><i class="fas fa-skiing fa-fw" style="background:SkyBlue"></i> Skiing</div>
+  <div><i class="fas fa-skiing-nordic fa-fw" style="background:DodgerBlue"></i> Nordic Skiing</div>
+  <div><i class="fas fa-snowboarding fa-fw" style="background:SkyBlue"></i> Snowboarding</div>
+  <div><i class="fas fa-snowplow fa-fw" style="background:DodgerBlue"></i> Snowplow</div>
+</div>
+
+3. icon in a list sử dung fa-ul và fa-li
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fas fa-check-square"></i></span>List icons can</li>
+  <li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
+  <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
+  <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
+</ul>
+4. https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons

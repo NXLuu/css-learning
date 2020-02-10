@@ -1,0 +1,149 @@
+/* 
+for parent:
+    display: grid | inline-grid;
+        thiết lập 1 grid container
+    grid-template-columns: chia các cột hay các hàng thành các phàn
+    grid-template-row:
+        fr: 1 phần
+        %
+        length(px, em, rem)
+    grid-template-areas: xác định khoảng không mà mỗi phàn tử chiếm theo ten đã đặt thông qua grid-area
+        grid-area-name
+        .
+        none 
+        ...
+    grid-template: shorthand for grid-template-row | grid-template-columns | grid-template-areas
+        none: đưa về giá trị mặc định
+    grid-column-gap: Xác dịnh kích thước khoảng không giữa các phàn tử
+    grid-row-gap:
+        length<px, em, rem, ...>
+    grid-gap: shorthand fỏ grid-row-gap | grid-column-gap
+    justify-items: điều chỉnh vị trị của các item so với viền của grid
+        start: sát bên trái 
+        end: sát bên phải
+        center: ở giữa
+        stretch: Giàn cho vừa chiều rộng của mỗi ô
+    align-items: điều chỉnh vị trị của các item so với viền cột của grid
+        start | end | center | stretch;
+    place-items: short hand for align-item và justify-items
+    justify-content: // đôi khi kích cỡ của tất cả các item nhỏ hơn container do đó có thể căn chỉnh vị trị của tất cả các item so với conatiner theo hàng
+        start: xát vào cạnh đầu của container 
+        end: xát vào cạnh cuối của container 
+        center: giữa của container
+        space-around: thêm khoảng trống giữa các cột
+        space-between: 2 đầu xát  vào lề khoảng trống dồn cho các phần tử giữa 
+        space-evenly: căn đều khoảng trống giữa các phần
+        stretch: tăng kích thước và giàn đều 
+    align-content: theo trục y
+        start
+        end 
+        center 
+        space-around
+        space-between
+        space-evenly
+        stretch
+    place-content: 
+        align-content | justify-content
+    grid-auto-columns // Tạo kích cỡ cho bất kì item nào được tạo
+    grid-auto-rows 
+    grid-auto-columns
+    grid-auto-flow:
+    
+    shorthand: 
+
+-------------
+for child:
+    grid-column-start 
+    grid-column-end
+    grid-row-start
+    grid-row-end:
+        number: 1 2 3 5
+        name: tên của grid line
+        span <number>: Mở rộng bằng với số được cung cấp
+        span <name>: Mở rộng thông qua dòng tiếp theo của tên đã cung cấp
+       auto
+    grid-column = start + end;
+    grid-row = start + end;
+    grid-area: cho mỗi item 1 cái tên để có thể sử dụng grid-template-areas
+        name
+        row-start | column-start | row-end | column-end
+        ví du: grid-area: 1 / col4-startstart / last-line / 6
+    justify-self: 
+        start
+        end 
+        center
+        stretch
+    align-self:
+        start
+        end 
+        center 
+        stretch
+    
+    place-self: align-self  && justify-self
+*/
+
+
+
+.body-container {
+    margin: 0;
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "section aside"
+        "article aside"
+        "footer footer";
+    /* grid-gap: 5px 6px; */
+    justify-items: stretch;
+    align-items: stretch;
+
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer {
+    border: 1px solid black;
+    text-align: center;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+article {
+    grid-area: article;
+}
+
+section {
+    grid-area: section;
+}
+
+aside {
+    grid-area: aside;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.vertical {
+    vertical-align: middle;
+}
+
+footer {
+    grid-area: footer;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

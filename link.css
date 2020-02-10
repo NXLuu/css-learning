@@ -1,0 +1,42 @@
+/*
+    link state:
+        a:link:  //a nomarl link
+        a:visited:  //đã click
+        a:hover   //Khi con trỏ chỉ vào đường link
+        a:focus  //giống hover nhưng sử dụng nút tab
+        a:active  //Click và giữ chưa thả con trỏ chuột ra
+*/
+
+.style-link {
+    font-size: 30px;
+    color: rgb(56, 15, 143);
+    text-decoration: none;
+}
+.style-link:hover {
+    text-decoration: underline;
+}
+.style-link:visited {
+    color:  rgb(56, 15, 143);
+}
+.style-link:active {
+    color:  rgb(18, 4, 48);
+}
+
+.button {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(97, 93, 93);
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px rgb(138, 128, 128);
+    padding: 10px 20px;
+    background-color: rgb(237, 8, 23);
+}
+.button:hover {
+    background-image: linear-gradient(127deg, rgba(108,15,26,0.9444152661064426) 14%, rgba(238,133,172,1) 63%, rgba(255,80,198,1) 100%);
+}
+
+.button:active {
+    background-color: rgb(237, 8, 23);
+}
+

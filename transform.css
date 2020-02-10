@@ -1,0 +1,50 @@
+/* 
+    transform: thây đổi 1 item 
+        scale(): thay đổi kích cỡ phóng to thu nhỏ dùng cho cả font-size, padding và height
+        scaleX(), scaleY();
+
+        skew(deg, deg): chỉnh chiều nghiêng của item ví dụ hình vuông thành hình bình hành 
+        skewX(), SkewY();
+
+        translate(px, px): di chuyển phần tử lên xuống
+        translateX(), translateY();
+
+        rolate(deg): xoay phần tử theo chiều kim đòng hồ
+
+        matrix(): 1 hàm có thể thay đỏi mọi thuộc tính của transform 
+
+        perspective(): 
+
+*/
+
+/* transition:
+    transition-delay: time: s
+    transition-duration: s;
+    transition-property:
+        none 
+        all 
+        property
+    transition-timing-function
+
+    shorthand: property, duration, timing-functioin, delay
+*/
+
+.container-transform {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(186, 145, 145);
+}
+
+.child-transform {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(47, 2, 79);
+    transition: all 0.3s;
+}
+
+.container-transform:hover .child-transform {
+    transform:matrix(2.00,0.00,0.00,2.00,20,60);
+}
